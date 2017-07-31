@@ -155,14 +155,15 @@ header.sticky {
     vertical-align: middle
 }
 footer {
-    padding: 50px 0
+    padding: 50px 0;
+    background: #3498db;
 }
 .copyright {
     padding-top: 20px
 }
 .copyright p {
     margin: 0;
-    color: #74808a
+    color: #ffffff;
 }
 .top {
     text-align: center
@@ -174,11 +175,11 @@ footer {
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    border: 3px solid #b9bfc4;
+    border: 3px solid #fff;
     text-align: center
 }
 .top i {
-    color: #74808a
+    color: #fff;
 }
 .social {
     text-align: right
@@ -194,7 +195,7 @@ footer {
 }
 .social a {
     display: block;
-    color: #74808a;
+    color: #fff;
     padding: 10px
 }
 .social a:hover {
@@ -225,63 +226,88 @@ footer {
     display: inline-block;
     font-size: 2em;
     font-weight: 300;
-    margin: 0 0 30px 0
+    margin: 30px 0 30px 0
 }
 .heading:after {
     position: absolute;
     content: '';
     top: 100%;
     height: 1px;
-    width: 50px;
     left: 0;
     right: 0;
     margin: 0 auto;
     background: #3498db
 }
 .background-alt {
-    background: #e4f4ff
+    background: #f2f2f5
 }
 
 #top {
-	background: url(../images/blurry.jpg);
-	background: cover;
     padding: 50px 15px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 1px solid #dcd9d9;
+	 background-size: cover;
+    padding: 15px;
+    overflow: hidden;
+	background: #e3f4ff;
+	background: url(../images/tech.jpg);
+    background-size: contain;
+	
 }
 #top h2 {
 	padding-top: 50px;
-    color: #374054
+    color: #374054;
+	font-size: 3.2em;
+	font-weight: 700;
 }
 
-#top p {
-    width: 60%;
-	margin: 0 auto 0 auto;
-    position: relative;
-    max-width: 1000px;
-	font-size: .5em;
+    z-index: 1;
 }
-#top h2:after {
+#top h2.heading:after {
 	width: 80%;
+	padding-right: 600px;
 }
+#top-overlay {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(62, 148, 206, 0.8);
+    z-index: 1
 }
-#about {
-    padding: 75px 15px;
-    border-bottom: 1px solid #dcd9d9
+#relep {
+    padding: 40px 15px 70px;
+    border-bottom: 1px solid #dcd9d9;
+	text-align: center;
+	background: url(../images/tech.jpg);
+    background-size: contain;
 }
-#about h2 {
-    color: #374054
+#relep h2 {
+	background-color: rgba(255, 255, 255, 0.64);
+    color: #374054;
 }
-#about p {
+#relep p {
     color: #74808a;
-    margin: 0
 }
+#relep ul {
+	background-color: rgba(255, 255, 255, 0.64);
+    list-style: none; /* Remove list bullets */
+    padding: 0;
+    margin: 0;
+}
+
 #experience {
-    padding: 50px 15px;
+   padding: 20px 15px 20px 15px;
     text-align: center;
-    border-bottom: 1px solid #dcd9d9
+    border-bottom: 1px solid #dcd9d9;
+	background: url(../images/tech.jpg);
+    background-size: contain;	
 }
 #experience h2 {
+	background-color: rgba(255, 255, 255, 0.64);
     color: #374054
 }
 #experience-timeline {
@@ -370,15 +396,17 @@ footer {
     color: #374054
 }
 #education {
-    padding: 50px 15px 20px 15px;
+    padding: 20px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center
 }
 #education h2 {
+	background-color: #fff;
     color: #374054;
     margin-bottom: 50px
 }
 .education-block {
+	background-color: #fff;
     max-width: 700px;
     margin: 0 auto 30px auto;
     padding: 15px;
@@ -386,6 +414,7 @@ footer {
     text-align: left
 }
 .education-block h3 {
+	background-color: #fff;
     font-weight: 500;
     float: left;
     margin: 0;
@@ -411,11 +440,12 @@ footer {
     padding: 0 0 0 15px
 }
 #projects {
-    padding: 50px 15px;
+    padding: 20px 15px 20px 15px;
     border-bottom: 1px solid #dcd9d9;
     text-align: center
 }
 #projects h2 {
+	background-color: #fff;
     color: #374054;
     margin-bottom: 50px
 }
@@ -453,10 +483,11 @@ footer {
     display: none
 }
 #skills {
-    padding: 50px 15px;
+   padding: 20px 15px 20px 15px;
     text-align: center
 }
 #skills h2 {
+	background-color: #fff;
     color: #374054;
     margin-bottom: 50px
 }
@@ -476,76 +507,7 @@ footer {
     cursor: default;
     font-size: 1.2em
 }
-#contact {
-    padding: 50px 15px;
-    background: #3498db;
-    text-align: center
-}
-#contact h2 {
-    margin: 0 0 15px 0;
-    color: #fff;
-    font-weight: 500
-}
-#contact-form {
-    max-width: 500px;
-    margin: 0 auto
-}
-#contact-form input,
-#contact-form textarea {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border-radius: 4px;
-    border: none;
-    margin-bottom: 10px;
-    background: #1d6fa5;
-    color: #fff;
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all
-}
-#contact-form input::-webkit-input-placeholder,
-#contact-form textarea::-webkit-input-placeholder {
-    color: #fff
-}
-#contact-form input:-moz-placeholder,
-#contact-form textarea:-moz-placeholder {
-    color: #fff;
-    opacity: 1
-}
-#contact-form input::-moz-placeholder,
-#contact-form textarea::-moz-placeholder {
-    color: #fff;
-    opacity: 1
-}
-#contact-form input:-ms-input-placeholder,
-#contact-form textarea:-ms-input-placeholder {
-    color: #fff
-}
-#contact-form input:focus,
-#contact-form textarea:focus {
-    outline: none;
-    background: #16527a
-}
-#contact-form textarea {
-    height: 150px;
-    resize: none
-}
-#contact-form button {
-    display: block;
-    width: 100%;
-    background: #fff;
-    border-radius: 4px;
-    padding: 5px 10px;
-    border: none;
-    color: #3498db;
-    font-weight: 700;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-    -webkit-transition: .5s ease all;
-    transition: .5s ease all
-}
-#contact-form button:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
-}
+
 .optional-section {
     padding: 50px 15px;
     text-align: center;
