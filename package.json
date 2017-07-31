@@ -2,7 +2,7 @@
   "name": "devportfolio-template",
   "version": "1.1.3",
   "description": "",
-  "main": "js/scripts.js",
+  "main": "/home/012/j/jl/jlb140130/janellelyne.com-master/js/scripts.js",
   "scripts": {
     "watch": "gulp watch"
   },
@@ -16,7 +16,7 @@
   ],
   "author": "Ryan Fitzgerald",
   "license": "MIT",
-  "devDependencies": {
+    "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.1",
     "gulp-plumber": "^1.1.0",

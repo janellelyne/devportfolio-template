@@ -1,0 +1,29 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/012/j/jl/jlb140130/local/bin/node',
+1 verbose cli   '/home/012/j/jl/jlb140130/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'gulp',
+1 verbose cli   '--save-dev' ]
+2 info using npm@3.5.3
+3 info using node@v9.0.0-pre
+4 verbose stack Error: Cannot find module 'internal/fs'
+4 verbose stack     at Function.Module._resolveFilename (module.js:485:15)
+4 verbose stack     at Function.Module._load (module.js:437:25)
+4 verbose stack     at Module.require (module.js:513:17)
+4 verbose stack     at require (internal/module.js:11:18)
+4 verbose stack     at evalmachine.<anonymous>:40:20
+4 verbose stack     at Object.<anonymous> (/home/012/j/jl/jlb140130/local/lib/node_modules/npm/node_modules/cmd-shim/node_modules/graceful-fs/fs.js:11:1)
+4 verbose stack     at Module._compile (module.js:569:30)
+4 verbose stack     at Object.Module._extensions..js (module.js:580:10)
+4 verbose stack     at Module.load (module.js:503:32)
+4 verbose stack     at tryModuleLoad (module.js:466:12)
+5 verbose cwd /home/012/j/jl/jlb140130/janellelyne.com-master
+6 error Linux 3.10.0-514.16.1.el7.x86_64
+7 error argv "/home/012/j/jl/jlb140130/local/bin/node" "/home/012/j/jl/jlb140130/local/bin/npm" "install" "gulp" "--save-dev"
+8 error node v9.0.0-pre
+9 error npm  v3.5.3
+10 error code MODULE_NOT_FOUND
+11 error Cannot find module 'internal/fs'
+12 error If you need help, you may report this error at:
+12 error     <https://github.com/npm/npm/issues>
+13 verbose exit [ 1, true ]
